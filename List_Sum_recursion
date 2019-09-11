@@ -1,0 +1,7 @@
+#Python 3.0+ list sum recursion realisation
+def sum_list(list):
+    sum = list.pop(0)
+    if (len(list) == 0):
+        return sum
+    else:
+        return sum + sum_list(list)
