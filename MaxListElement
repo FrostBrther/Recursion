@@ -1,0 +1,8 @@
+#Python 3.0+ realisation 
+
+def max_element(list):
+    if (len(list) == 1):
+        return list[0]    
+    else:
+        max = max_element(list[1:])
+        return max if max > list[0] else list[0]
